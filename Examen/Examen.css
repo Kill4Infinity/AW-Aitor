@@ -1,0 +1,194 @@
+/*
+?Examen Tema 1   29/11/2024
+!Aitor Jerez Clemente
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+}
+
+html {
+    font-family: FontEx;
+}
+
+.logo {
+    margin: 2.5rem;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: .3125rem;
+    padding-top: .3125rem;
+    width: 100%;
+    background-color: black;
+}
+
+
+.header a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: .9375rem;
+    flex: 1;
+}
+
+.header a:hover {
+    background-color: rgb(213, 239, 110);
+    color: black;
+}
+
+.platillo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    max-width: 100%;
+    height: auto;
+    width: 55%;
+    border-radius: .9375rem;
+    box-shadow: -0.5rem -0.25rem .25rem rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin-left: 10%;
+}
+
+th, td {
+    padding: .5rem;
+    text-align: center;
+}
+
+th {
+    background-color: #bbdd5e;
+    color: white;
+}
+
+td {
+    padding-right: 31.25rem;
+}
+
+.separacion{
+    padding: 1.25rem;
+}
+
+.contacto {
+    background-color: rgb(176, 176, 176);
+    border-radius: .3125rem;
+    width: 75%;
+    margin: auto;
+    padding: .9375rem;
+}
+
+.receta-hogar{
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0.5rem 0.25rem .25rem rgba(0, 0, 0, 0.2);
+}
+
+.contacto h1 {
+    color: white;
+    text-align: left;
+    padding: .625rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario>* {
+    margin: .625rem 0rem 0rem 0rem;
+    padding: .9375rem;
+    border-radius: .625rem;
+}
+
+.enviar{
+    text-align: right;
+    color: #bbdd5e;
+}
+
+footer {
+    background-color: #c0c54a;
+    padding: 1.25rem 0;
+    color: #000;
+}
+
+.footer-estilo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.recetas {
+    flex: 1;
+    margin: 0 .625rem;
+}
+
+.recetas h3 {
+    font-size: 1.25rem;
+    margin-bottom: .625rem;
+    font-weight: bold;
+}
+
+.recetas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recetas li {
+    font-size: .875rem;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 48rem) {
+    .logo {
+        width: 50%;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .platillo {
+        width: 90%;
+    }
+
+    table {
+        margin-left: 0;
+    }
+
+    .contacto {
+        width: 90%;
+    }
+
+    .footer-estilo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recetas {
+        margin: .625rem 0;
+    }
+}
+
+@font-face {
+    font-family: FontEx;
+    src: url(./Fuente/Sarcolenta.ttf);
+}
